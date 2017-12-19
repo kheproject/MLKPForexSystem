@@ -1,0 +1,46 @@
+.srcBtn
+{
+	color: #FFFFFF;
+	background: transparent url('../Images/btnSearch.png' ) no-repeat;
+	width: 20px;
+	font-size: 11px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;	
+	text-align: center;
+	vertical-align: middle;
+	border-style:none;
+	
+}
+.srcBtn:hover
+{
+	color: #000000;
+}
+.drag
+{
+    background-image: url( '../Images/modalbg.png' );
+    background-repeat: repeat;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+.drag > div
+	{
+		background-color:White;
+		padding: 10px 5px 15px 5px;
+		border: 1px solid rgb(100,135,220);
+		background-repeat: repeat;
+		
+	}
+.gridContainer
+    {        
+    }
+.closeContainer
+    {
+        height: 20px;
+        background: rgb(100,135,220);       
+    }
+.closeButton
+    {
+        padding: auto auto 5px auto;
+        float: right;
+    }

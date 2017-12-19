@@ -1,0 +1,193 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        #leftLabel
+        {
+            height: 16px;
+            width: 706px;
+        }
+    
+.column{ -webkit-border-top-left-radius:12px; -webkit-border-top-right-radius:12px; -webkit-border-bottom-right-radius:12px; -webkit-border-bottom-left-radius:12px;
+	background-color: #E4E6E7;
+	width: 179px; 
+	height: 91px;
+	float: left; 
+	padding: 15px 5px 0 5px;
+}
+
+div#logout a:link
+{
+	float: left;
+	padding-left: 125px;
+	font-size: 12px; 
+	font-family: Arial;
+	text-decoration: none;
+	color: #36393c;
+}
+
+        #form1
+        {
+            height: 761px;
+        }
+        #menuHolder
+        {
+            height: 26px;
+        }
+        .style4
+        {
+            width: 1132px;
+            height: 816px;
+        }
+        .style5
+        {
+            height: 115px;
+        }
+        .style11
+        {
+            height: 671px;
+            }
+        #form2
+        {
+            height: 99px;
+        }
+        .style13
+        {
+            height: 36px;
+        }
+        #leftLabel1
+        {
+            width: 338px;
+            height: 6px;
+        }
+        #rightLabel
+        {
+            width: 709px;
+        }
+        .style14
+        {
+            height: 9px;
+        }
+        .style15
+        {
+            width: 100%;
+            height: 115px;
+        }
+        .style16
+        {
+        }
+        .style18
+        {
+            width: 100%;
+            height: 31px;
+        }
+        .style19
+        {
+            width: 850px;
+        }
+        .style20
+        {
+            width: 290px;
+        }
+        </style>
+</head>
+
+<body>
+<form id="form1" runat="server">
+    <div align="center" 
+        style="background-color: #FFFFFF; font-family: Arial; font-size: 12pt;">
+    
+    <table class="style4" style="line-height: normal; vertical-align: bottom;">
+        <tr>
+       <td class="style5" style="vertical-align: top; text-align: left;">
+       
+           <table class="style15">
+               <tr>
+                   <td class="style16">
+                       <div id="header">
+                           <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/banner1.jpg" 
+                               Width="100%" />
+                       </div>
+                       
+                   </td>
+               </tr>
+           </table>
+        
+       </td>
+        </tr>
+        <tr>
+            <td class="style13" 
+                
+                
+                style="text-align: left; vertical-align: middle; background-color: #2d2d2d;">
+                <table class="style18">
+                    <tr>
+                        <td class="style19">
+                &nbsp;&nbsp;&nbsp;
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                   <p style="text-align: justify; vertical-align: text-top">
+                       &nbsp;</p>
+               </asp:ContentPlaceHolder>
+                </td>
+                        <td style="text-align: right">
+                        <div align="right">
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" 
+                    Font-Names="Arial" Text="Welcome!" ForeColor="White" Font-Size="12pt"></asp:Label>
+                            <asp:Label ID="lblUserinfo" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Arial" Font-Overline="False" ForeColor="#FF9933" 
+                    style="font-size: small" Font-Size="12pt"></asp:Label>
+                <asp:Button ID="btnSignOut" runat="server" Font-Bold="True"
+                Font-Names="Arial" Text="Sign Out" ForeColor="White" 
+                    BackColor="#CC0000" Visible="False"/>
+                            </div>
+                            <asp:Label ID="lblSys" runat="server" Font-Bold="True" Font-Names="Arial" 
+                                Font-Size="12pt" ForeColor="White" Text="MLKP Forex System v7.05" 
+                                Visible="False"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+             </td>
+        </tr>
+        <tr>
+            <td class="style11" style="vertical-align: top; background-color: #C0C0C0;">
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                   <p style="text-align: justify; vertical-align: text-top">
+                       &nbsp;</p>
+               </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style14" style="vertical-align: top; background-color: #CC0000;">
+             
+                <table class="style18">
+                    <tr>
+                        <td style="text-align: left">
+                            <asp:Label ID="Label3" runat="server" Font-Names="ariel" Font-Size="10pt" 
+                                Text="M Lhuillier Financial Services, Inc." Font-Bold="True" 
+                                ForeColor="White"></asp:Label>
+                        </td>
+                        <td class="style20" style="text-align: left">
+                            &nbsp;</td>
+                        <td style="text-align: right">
+                            <asp:Label ID="Label4" runat="server" Font-Names="ariel" Font-Size="10pt" 
+                                Text="All Rights Reserved" ForeColor="White" Font-Bold="True"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+             
+            </td> 
+        </tr>
+        </table>
+</div>      
+      </form>
+      </body>
+</html>
